@@ -1,0 +1,32 @@
+[
+    {
+        "categories": "cpu",
+        "name": "CPU",
+        "picture": "https://i.ibb.co/pJ13zRB/8186331.png"
+    },
+    {
+        "categories": "ram",
+        "name": "RAM",
+        "picture": "https://i.ibb.co/qFSFvrm/2703609.png"
+    },
+    {
+        "categories": "cooler",
+        "name": "CPU Cooler",
+        "picture": "https://i.ibb.co/TPBV03W/cpu-fan-icon-editable-bold-outline-color-fill-design-vector-illustration-215219008.webp"
+    },
+    {
+        "categories": "monitor",
+        "name": "Monitor",
+        "picture": "https://i.ibb.co/dJ6kTLW/4854302.png"
+    },
+    {
+        "categories": "keyboard",
+        "name": "keyboard",
+        "picture": "https://i.ibb.co/rG1N1DG/e04bd9042f1695f0844fbe935b858d9c-keyboard-flat-icon.png"
+    },
+    {
+        "categories": "grapichs",
+        "name": "Grapich Card",
+        "picture": "https://i.ibb.co/gmbfwnb/2286822.png"
+    }
+]

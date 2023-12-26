@@ -1,0 +1,112 @@
+[
+    {
+      "model": "Logitech G Pro X",
+      "price": "$129.99",
+      "image": "https://resource.logitech.com/content/dam/gaming/en/products/pro-x-tkl/gallery-1-pro-x-tkl-black-lightspeed-gaming-keyboard.png.png",
+      "description": "The Logitech G Pro X is a compact and customizable mechanical gaming keyboard designed for professional gamers. It features hot-swappable switches and customizable RGB lighting.",
+      "keys": "Mechanical, Hot-swappable",
+      "system_requirements": "Windows 7/8/10, USB port, Logitech G HUB software",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Black"
+    },
+    {
+      "model": "Corsair K70 RGB MK.2",
+      "price": "$159.99",
+      "image": "https://www.techlandbd.com/image/catalog/Keyboard/Corsair/K70/corsair-k70-rgb-rapidfire-mechanical-gaming-keyboard-price-in-bd.png",
+      "description": "The Corsair K70 RGB MK.2 is a premium mechanical gaming keyboard with Cherry MX switches and vibrant RGB backlighting. It offers dedicated media controls and a durable aluminum frame.",
+      "keys": "Mechanical, Cherry MX",
+      "system_requirements": "Windows 7/8/10, USB port, Corsair iCUE software",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Gunmetal Black"
+    },
+    {
+      "model": "Razer BlackWidow Elite",
+      "price": "$169.99",
+      "image": "https://cdn.wccftech.com/wp-content/uploads/2018/10/Razer-Blackwidow-Elite-Render.png",
+      "description": "The Razer BlackWidow Elite is a full-sized mechanical gaming keyboard featuring Razer's Green switches and customizable RGB lighting. It includes dedicated media controls and a magnetic wrist rest.",
+      "keys": "Mechanical, Razer Green",
+      "system_requirements": "Windows 7/8/10, USB port, Razer Synapse software",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Classic Black"
+    },
+    {
+      "model": "SteelSeries Apex Pro",
+      "price": "$199.99",
+      "image": "https://media.steelseriescdn.com/thumbs/catalog/items/64626/e83ce335639e4635874e65fbd65f1ab6.png.1000x575_q100_crop-scale_optimize_upscale.png",
+      "description": "The SteelSeries Apex Pro is a high-performance mechanical gaming keyboard with adjustable mechanical switches and customizable RGB lighting. It offers a magnetic wrist rest for comfort during long gaming sessions.",
+      "keys": "Mechanical, Adjustable",
+      "system_requirements": "Windows 7/8/10, USB port, SteelSeries Engine software",
+      "warranty": "1 year",
+      "wired_wireless": "Wired",
+      "color": "Silver"
+    },
+    {
+      "model": "HyperX Alloy FPS Pro",
+      "price": "$79.99",
+      "image": "https://w7.pngwing.com/pngs/163/375/png-transparent-computer-keyboard-hyperx-alloy-elite-mechanical-gaming-keyboard-gaming-keypad-hyperx-pulsefire-fps-gaming-mouse-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-headphones-electronics-computer.png",
+      "description": "The HyperX Alloy FPS Pro is a tenkeyless mechanical gaming keyboard with Cherry MX switches, designed for FPS gamers. It features a solid steel frame for durability.",
+      "keys": "Mechanical, Cherry MX",
+      "system_requirements": "Windows 7/8/10, USB port",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Red LED Backlight"
+    },
+    {
+      "model": "ASUS ROG Strix Scope",
+      "price": "$149.99",
+      "image": "https://rog.asus.com/websites/global/products/RAG8S2RS5ldY04Eg/img/kb/magnetic-pd-3.png",
+      "description": "The ASUS ROG Strix Scope is a mechanical gaming keyboard with Cherry MX switches and customizable RGB lighting. It features an extended Ctrl key for FPS gaming.",
+      "keys": "Mechanical, Cherry MX",
+      "system_requirements": "Windows 7/8/10, USB port, ASUS Armoury Crate software",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Black"
+    },
+    {
+      "model": "Corsair K95 RGB Platinum",
+      "price": "$209.99",
+      "image": "https://assets.corsair.com/image/upload/f_auto,q_auto/v1/akamai/pdp/k95-rgb-se/k95-rgb-se-front.png",
+      "description": "The Corsair K95 RGB Platinum is a premium mechanical gaming keyboard with Cherry MX switches, dedicated macro keys, and customizable RGB backlighting.",
+      "keys": "Mechanical, Cherry MX",
+      "system_requirements": "Windows 7/8/10, USB port, Corsair iCUE software",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Brushed Aluminum"
+    },
+    {
+      "model": "Roccat Vulcan 120 AIMO",
+      "price": "$149.99",
+      "image": "https://eu.roccat.com/cdn/shop/products/Vulcan-122-US_2x_9d5d14b9-31a7-47a9-92d0-ca722cbda43a_1024x1024.png?v=1615353553",
+      "description": "The Roccat Vulcan 120 AIMO is a mechanical gaming keyboard with Titan switches and customizable AIMO RGB lighting. It features a sleek aluminum top plate.",
+      "keys": "Mechanical, Titan",
+      "system_requirements": "Windows 7/8/10, USB port",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Gunmetal"
+    },
+    {
+      "model": "Ducky One 2 Mini",
+      "price": "$129.99",
+      "image": "https://www.duckychannel.com.tw/upload/2019_06_042/20190604170828hb35lz9ZE10.jpg",
+      "description": "The Ducky One 2 Mini is a compact 60% mechanical gaming keyboard with Cherry MX switches. It features customizable RGB lighting and a detachable USB-C cable.",
+      "keys": "Mechanical, Cherry MX",
+      "system_requirements": "Windows, macOS, Linux, USB port",
+      "warranty": "1 year",
+      "wired_wireless": "Wired",
+      "color": "White"
+    },
+    {
+      "model": "Cooler Master CK552",
+      "price": "$79.99",
+      "image": "https://files.coolermaster.com/og-image/ck552-1200x600.jpg",
+      "description": "The Cooler Master CK552 is a mechanical gaming keyboard with Gateron switches and customizable RGB lighting. It features a brushed aluminum top plate.",
+      "keys": "Mechanical, Gateron",
+      "system_requirements": "Windows 7/8/10, USB port",
+      "warranty": "2 years",
+      "wired_wireless": "Wired",
+      "color": "Brushed Black"
+    }
+  ]

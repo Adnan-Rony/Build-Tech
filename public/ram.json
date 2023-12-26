@@ -1,0 +1,124 @@
+
+[
+    {
+      "model": "Corsair Vengeance LPX",
+      "voltage": "1.35V",
+      "price": "$89.99",
+      "image": "https://www.startech.com.bd/image/cache/catalog/RAM/VENG_LPX_BLK_01-500x500.png",
+      "description": "The Corsair Vengeance LPX is a high-performance DDR4 RAM module designed for gaming and content creation. It features a low-profile design for compatibility with large CPU coolers.",
+      "type": "DDR4",
+      "capacity": "16GB (2 x 8GB)",
+      "frequency": "3200MHz",
+      "pin": "288-pin",
+      "warranty": "Lifetime"
+    },
+    {
+      "model": "G.Skill Ripjaws V",
+      "voltage": "1.35V",
+      "price": "$79.99",
+      "image": "https://www.binarylogic.com.bd/images/product_image/g-skill-ripjaws-v-16gb-3200mhz-ddr4-ram.webp",
+      "description": "The G.Skill Ripjaws V is a reliable DDR4 RAM module known for its excellent performance and overclocking capabilities. It features a stylish heatspreader for efficient heat dissipation.",
+      "type": "DDR4",
+      "capacity": "32GB (2 x 16GB)",
+      "frequency": "3600MHz",
+      "pin": "288-pin",
+      "warranty": "Limited Lifetime"
+    },
+    {
+      "model": "Crucial Ballistix RGB",
+      "voltage": "1.35V",
+      "price": "$109.99",
+      "image": "https://www.elnekhelytechnology.com/image/cache/catalog/Rams/Crucial/crucial-ballistix-tactical-tracer-rgb-8gb-ddr4-3200-cl16-1-35v-1000x1000.png",
+      "description": "The Crucial Ballistix RGB is a DDR4 RAM module featuring customizable RGB lighting for a vibrant and personalized system. It offers high-speed performance and is ideal for gaming enthusiasts.",
+      "type": "DDR4",
+      "capacity": "64GB (4 x 16GB)",
+      "frequency": "3200MHz",
+      "pin": "288-pin",
+      "warranty": "Limited Lifetime"
+    },
+    {
+      "model": "Kingston HyperX Fury",
+      "voltage": "1.2V",
+      "price": "$64.99",
+      "image": "https://computermania-bd.b-cdn.net/wp-content/uploads/2019/06/kingston-hyperx-fury-ddr4-3200mhz-desktop-ram-black-600x450.png",
+      "description": "The Kingston HyperX Fury is a cost-effective DDR4 RAM module known for its reliability and compatibility. It features automatic overclocking for hassle-free performance enhancement.",
+      "type": "DDR4",
+      "capacity": "8GB (1 x 8GB)",
+      "frequency": "2666MHz",
+      "pin": "288-pin",
+      "warranty": "Lifetime"
+    },
+    {
+      "model": "ADATA XPG Gammix D10",
+      "voltage": "1.35V",
+      "price": "$94.99",
+      "image": "https://webapi3.adata.com/storage/ProductGallery/productGallery102.png",
+      "description": "The ADATA XPG Gammix D10 is a DDR4 RAM module featuring a sleek and stylish design. It offers excellent stability and performance, making it suitable for gaming and multitasking.",
+      "type": "DDR4",
+      "capacity": "16GB (2 x 8GB)",
+      "frequency": "3000MHz",
+      "pin": "288-pin",
+      "warranty": "Limited Lifetime"
+    },
+    {
+      "model": "Team T-FORCE Delta RGB",
+      "voltage": "1.35V",
+      "price": "$99.99",
+      "image": "https://selltech.com.bd/image/cache/catalog/TEAM%20T-FORCE%20DELTA%20RGB%20WHITE%208GB%203200MHz%20DDR4%20Desktop%20Gaming%20RAM.png-550x550.png.webp",
+      "description": "The Team T-FORCE Delta RGB is a DDR4 RAM module with eye-catching RGB lighting effects. It combines performance and aesthetics, making it suitable for gaming setups.",
+      "type": "DDR4",
+      "capacity": "32GB (2 x 16GB)",
+      "frequency": "3200MHz",
+      "pin": "288-pin",
+      "warranty": "Lifetime"
+    },
+    {
+      "model": "Patriot Viper Steel Series",
+      "voltage": "1.35V",
+      "price": "$84.99",
+      "image": "https://www.guru3d.com/data/publish/202/9882243e78dd05be0d3f76bd7947b0fbb122b5/viper_steel_e.jpg",
+      "description": "The Patriot Viper Steel Series is a DDR4 RAM module known for its sleek and durable design. It offers reliable performance and is suitable for various computing tasks.",
+      "type": "DDR4",
+      "capacity": "16GB (2 x 8GB)",
+      "frequency": "3200MHz",
+      "pin": "288-pin",
+      "warranty": "Limited Lifetime"
+    },
+    {
+      "model": "Crucial Ballistix Sport LT",
+      "voltage": "1.2V",
+      "price": "$69.99",
+      "image": "https://sigma-computer.com/image/products/1575110137web-template.png",
+      "description": "The Crucial Ballistix Sport LT is a DDR4 RAM module designed for mainstream users. It offers reliable performance and compatibility with various systems.",
+      "type": "DDR4",
+      "capacity": "8GB (1 x 8GB)",
+      "frequency": "2666MHz",
+      "pin": "288-pin",
+      "warranty": "Limited Lifetime"
+    },
+    {
+      "model": "ADATA XPG Spectrix D80",
+      "voltage": "1.35V",
+      "price": "$129.99",
+      "image": "https://zi-mm.co.uk/wp-content/uploads/2020/03/main.png",
+      "description": "The ADATA XPG Spectrix D80 is a unique DDR4 RAM module featuring liquid cooling for enhanced thermal performance. It offers high-speed and stable operation for gaming enthusiasts.",
+      "type": "DDR4",
+      "capacity": "16GB (2 x 8GB)",
+      "frequency": "3000MHz",
+      "pin": "288-pin",
+      "warranty": "Limited Lifetime"
+    },
+    {
+      "model": "HyperX Predator RGB",
+      "voltage": "1.35V",
+      "price": "$119.99",
+      "image": "https://www.mtech.am/image/cache/catalog/Products/Kingston-HyperX-Predator-RGB-16GB-2x8GB-DDR4-3200MHz-HX432C16PB3AK2-16/1-800x800.jpg",
+      "description": "The HyperX Predator RGB is a DDR4 RAM module known for its high-speed performance and dynamic RGB lighting effects. It is ideal for gaming setups and enthusiasts seeking a visually stunning system.",
+      "type": "DDR4",
+      "capacity": "32GB (4 x 8GB)",
+      "frequency": "3200MHz",
+      "pin": "288-pin",
+      "warranty": "Lifetime"
+    }
+  ]
+  
