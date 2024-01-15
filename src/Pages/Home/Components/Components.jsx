@@ -7,52 +7,38 @@ import grapich from '../../../assets/2286822.png'
 import keyboard from '../../../assets/e04bd9042f1695f0844fbe935b858d9c-keyboard-flat-icon.png'
 import cooler from '../../../assets/cpu-fan-icon-editable-bold-outline-color-fill-design-vector-illustration-215219008.webp'
 import { Link } from 'react-router-dom';
+import Getdata from '../../../Hook/Getdata';
+import ComponentsOne from './ComponentsOne';
+import Latest from '../Latest/Latest';
 
 
 
 const Components = () => {
 
-    const [categorie, setcategorie] = useState([]);
+const [components,loading]=Getdata();
 
-    const [loading, setLoading] = useState(true);
-
-    // useEffect(() => {
-    //     fetch("http://localhost:5000/categories")
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             setcategorie(data);
-    //             setLoading(false);
-    //         })
-    //         .catch((error) => console.error('Error fetching data:', error));
-    // }, []);
+ 
 
 
+    if (loading) {
+
+        return <div className="flex items-center justify-center h-screen">
+            <span className="loading loading-ring loading-lg"></span>
+        </div>
+
+    }
     return (
-        <div className='my-10'>
-            <p>Components</p>
+        <div className='my-10' id='components'>
+          
 
-            {/* <div className='py-10 grid lg:grid-cols-3 grid-cols-2 gap-8'>
-                {loading ? (
-                 <span className="loading loading-ring loading-lg mx-auto text-5xl"></span>
-                ) : (
-                    categorie.map((card, index) => (
-                        <div key={index}>
-                            <Link to={`components/${card._id}`}>
-                                <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
-                                    <img className='w-24 mx-auto' src={card.picture} alt={card.name} />
-                                    <div className='flex text-center justify-center items-center'>
-                                        <p className='font-medium text-sm text-gray-400 capitalize'>{card.name}</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                    ))
-                )}
-            </div> */}
+            
 
-            <div className='py-10 grid lg:grid-cols-3 grid-cols-2 gap-8 '>
+            <div className=' grid lg:grid-cols-3 grid-cols-2 gap-3'>
+
+
+
                 <div className='' >
-                    <Link to={`buildcpu`}>
+                    <Link to={'/cpu'}>
                         <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
                             <img className='w-24 mx-auto' src={cpu } alt="" />
                             <div className='flex text-center justify-center items-center'>
@@ -62,7 +48,7 @@ const Components = () => {
                     </Link>
                 </div>
                 <div >
-                    <Link to={`buildram`}>
+                    <Link to={'/ram'} >
                         <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
                             <img className='w-24 mx-auto' src={ram } alt="" />
                             <div className='flex text-center justify-center items-center'>
@@ -72,7 +58,7 @@ const Components = () => {
                     </Link>
                 </div>
                 <div >
-                    <Link  to={`buildcooler`}>
+                    <Link to={'/cooler'} >
                         <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
                             <img className='w-24 mx-auto' src={cooler } alt="" />
                             <div className='flex text-center justify-center items-center'>
@@ -82,7 +68,7 @@ const Components = () => {
                     </Link>
                 </div>
                 <div >
-                    <Link to={`buildkeyboards`} >
+                    <Link to={'/keyboard'}  >
                         <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
                             <img className='w-24 mx-auto' src={keyboard } alt="" />
                             <div className='flex text-center justify-center items-center'>
@@ -92,7 +78,7 @@ const Components = () => {
                     </Link>
                 </div>
                 <div >
-                    <Link to={`buildmonitor`} >
+                    <Link  to={'/monitor'}>
                         <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
                             <img className='w-24 mx-auto' src={monitor } alt="" />
                             <div className='flex text-center justify-center items-center'>
@@ -102,7 +88,7 @@ const Components = () => {
                     </Link>
                 </div>
                 <div >
-                    <Link to={`Buildgraphics`} >
+                    <Link to={'/graphics'} >
                         <div className='p-8 shadow-xl justify-center space-y-3 items-center'>
                             <img className='w-24 mx-auto' src={grapich } alt="" />
                             <div className='flex text-center justify-center items-center'>
@@ -111,6 +97,23 @@ const Components = () => {
                         </div>
                     </Link>
                 </div>
+
+                {/* <ComponentsOne title='CPU' item={cpuu}></ComponentsOne>
+                <ComponentsOne title='COOLER' item={coolerr}></ComponentsOne>
+
+                    <Latest></Latest>
+
+
+                <ComponentsOne title="MONITOR" item={monitorr}></ComponentsOne>
+                <ComponentsOne title="RAM" item={ramm}></ComponentsOne>
+                <ComponentsOne title="GRAPHICS" item={graphics}></ComponentsOne>
+                <ComponentsOne title="KEYBOARDS" item={keyboards}></ComponentsOne> */}
+
+
+                
+
+
+
             </div>
 
         </div>

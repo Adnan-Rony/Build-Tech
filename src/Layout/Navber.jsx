@@ -1,10 +1,41 @@
-import React from 'react';
+
+import { useContext } from 'react';
+import { FaShoppingCart, FaTv } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { AuthContext } from '../Firebase/Authprovider';
+import img from '../assets/portrait-icon-2.png'
+import UseCart from '../Hook/UseCart';
+import { Link } from 'react-router-dom';
+
 
 const Navber = () => {
+
+
+
+    const { user, logout } = useContext(AuthContext);
+
+
+        const [cart]=UseCart()
+
+
+    const handlelogout = () => {
+        logout()
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+
+
+
+
     return (
         <div>
-            <div className=''>
+            <div className='max-w-screen-xl mx-auto'>
                 <div className="navbar  ">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -15,68 +46,132 @@ const Navber = () => {
 
 
 
-                                <ul className="p-2">
-                                    <NavLink
-                                        to="/"
-                                        className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "active" : ""
-                                        }
-                                    >
-                                        Home
-                                    </NavLink>;
-                                    <NavLink
-                                        to="/"
-                                        className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "active" : ""
-                                        }
-                                    >
-                                        Home
-                                    </NavLink>;
-                                    <NavLink
-                                        to="/"
-                                        className={({ isActive, isPending }) =>
-                                            isPending ? "pending" : isActive ? "active" : ""
-                                        }
-                                    >
-                                        Home
-                                    </NavLink>
-                                </ul>
+
+                            <HashLink smooth to="/"
+                                className='btn btn-ghost btn-sm'
+                            >
+                                Home
+                            </HashLink>
+                            <HashLink smooth to="/#components"
+                                className='btn btn-ghost btn-sm'
+                            >
+                                Components
+                            </HashLink>
+                            <HashLink smooth to="/#latest"
+                                className='btn btn-ghost btn-sm'
+                            >
+                                Latest
+                            </HashLink>
+                            <HashLink smooth to="/#FAQ"
+                                className='btn btn-ghost btn-sm'
+                            >
+                                FAQ
+                            </HashLink>
 
 
-                            </ul>
+                            <NavLink to='/dashboard/carts' className='btn btn-ghost btn-sm'>
+                              <FaShoppingCart className='text-xl'> </FaShoppingCart>
+                              <div className='badge badge-'>+{cart.length}
+
+                              </div>
+
+
+                            </NavLink>
+
+
+                         
+                        
+
+
+
+                        </ul>
+                            
+
+
+
                         </div>
-                        <a className="btn btn-ghost text-xl">Build-Tech</a>
+                        <Link to='/'>
+                        Build-Tech
+                        </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 gap-3">
-                            <NavLink
-                                to="/"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "btn btn-outline e btn-sm" : ""
-                                }
+                            <HashLink smooth to="/"
+                                className='btn btn-ghost btn-sm'
                             >
                                 Home
-                            </NavLink>
-                            <NavLink
-                                to="/"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "btn btn-outline e btn-sm" : ""
-                                }
+                            </HashLink>
+                            <HashLink smooth to="/#components"
+                                className='btn btn-ghost btn-sm'
                             >
-                                Home
-                            </NavLink>
-                            <NavLink
-                                to="/"
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "btn btn-outline e btn-sm" : ""
-                                }
+                                Components
+                            </HashLink>
+                            <HashLink smooth to="/#latest"
+                                className='btn btn-ghost btn-sm'
                             >
-                                Home
+                                Latest
+                            </HashLink>
+                            <HashLink smooth to="/#FAQ"
+                                className='btn btn-ghost btn-sm'
+                            >
+                                FAQ
+                            </HashLink>
+
+
+                            <NavLink to='/dashboard/carts' className='btn btn-ghost btn-sm'>
+                              <FaShoppingCart className='text-xl'> </FaShoppingCart>
+                              <div className='badge badge-'>+{cart.length}
+
+                              </div>
+
+
                             </NavLink>
+
+
+                         
+
+
+                            
+                            <NavLink to='/dashboard' className='btn btn-ghost btn-sm'>
+                                Dashboard <FaTv></FaTv>
+
+
+                            </NavLink>
+
+
+
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn btn-outline e btn-sm">Contact</a>
+                        {
+                            user ? <>
+                                <button
+                                    onClick={handlelogout}
+                                    // className={({ isActive }) =>
+                                    //     isActive ? 'btn btn-outline btn-sm' : 'btn btn-ghost btn-sm'
+                                    // }
+                                    className='btn btn-ghost btn-sm'
+                                >
+                                    SignOut
+
+                                </button>
+                                {
+                                    user.photoURL ?
+                                        <img className='w-8 rounded-full' src={user.photoURL} alt="" />
+                                        :
+                                        <img className='w-8 rounded-full' src={img} alt="" />
+
+                                }
+
+
+                            </>
+                                :
+
+                                <NavLink to="/login" className="btn btn-outline e btn-sm">Login</NavLink>
+
+
+                        }
+
                     </div>
                 </div>
             </div>

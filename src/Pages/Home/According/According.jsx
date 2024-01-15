@@ -11,7 +11,7 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 const According = () => {
     return (
-        <div className='my-10'>
+        <div className='my-10'id='FAQ'>
             <div className='py-10'>
                 <p className='text-center text-4xl font-bold'>frequently asked question</p>
             </div>

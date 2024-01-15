@@ -3,115 +3,127 @@ import { createBrowserRouter } from 'react-router-dom';
 import Mainlayout from '../Layout/Mainlayout';
 import Home from '../Pages/Home/Home';
 
-import Buildcpu from '../Dynamic-Route/Buildcpu/Buildcpu';
-import BuildcpuDetails from '../Dynamic-Route/Buildcpu/BuildcpuDetails';
-import Buildram from '../Dynamic-Route/Buildram/Buildram';
-import BuildramDetails from '../Dynamic-Route/Buildram/BuildramDetails';
-import BuildcoolerDetails from '../Dynamic-Route/Buildcooler/BuildcoolerDetails';
-import Buildcooler from '../Dynamic-Route/Buildcooler/Buildcooler';
-import BuildKeyboardDetails from '../Dynamic-Route/BuildKeyboard/BuildKeyboardDetails';
-import BuildKeyboard from '../Dynamic-Route/BuildKeyboard/BuildKeyboard';
-import Buildmonitor from '../Dynamic-Route/Buildmonitor/Buildmonitor';
-import BuildmonitorDetails from '../Dynamic-Route/Buildmonitor/BuildmonitorDetails';
-import Buildgraphics from '../Dynamic-Route/Buildgraphics/Buildgraphics';
-import BuildgraphicsDetails from '../Dynamic-Route/Buildgraphics/BuildgraphicsDetails';
 
-const route = createBrowserRouter ([
-    {
-        path:"/",
-        element:<Mainlayout/>,
-        children:[
-            {
-                path:"/",
-                element:<Home/>
-            },
-          
+import Dashboard from '../Pages/Dashboard/Dashboard';
+import Cart from '../Pages/Dashboard/Cart';
+import Details from '../Pages/Home/Components/Details';
+import Cpu from '../Pages/Home/Compo/Cpu';
+import Ram from '../Pages/Home/Compo/Ram';
+import Cooler from '../Pages/Home/Compo/Cooler';
+import Monitor from '../Pages/Home/Compo/Monitor';
+import Keyboard from '../Pages/Home/Compo/Keyboard';
+import Graphics from '../Pages/Home/Compo/Graphics';
+import AllProducts from '../Pages/Dashboard/AllProducts';
+import Login from '../Firebase/Login';
+import Register from '../Firebase/Register';
+import Banner from '../Pages/Dashboard/Banner';
+import User from '../Pages/Dashboard/User';
+import Payment from '../Pages/Payment/Payment';
 
-              {
-                path:"/buildcpu",
-                element:<Buildcpu/>,
-               
-              },
-              {
-                path:"/buildram",
-                element:<Buildram/>,
-               
-              },
-              {
-                path:"/buildcooler",
-                element:<Buildcooler/>,
-               
-              },
-              {
-                path:"/buildkeyboards",
-                element:<BuildKeyboard/>,
-               
-              },
-            
-              {
-                path:"/buildmonitor",
-                element:<Buildmonitor/>,
-               
-              },
-              {
-                path:"/Buildgraphics",
-                element:<Buildgraphics/>,
-               
-              },
-            
+const route = createBrowserRouter([
+  {
+    path: "/",
+    element: <Mainlayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/cpu",
+        element: <Cpu></Cpu>
+      },
+      {
+        path: "/ram",
+        element: <Ram />
+      },
+      {
+        path: "/cooler",
+        element: <Cooler />
+      },
+      {
+        path: "/monitor",
+        element: <Monitor />
+      },
+      {
+        path: "/keyboard",
+
+        element: <Keyboard />
+      },
+      {
+        path: "/graphics",
+        element: <Graphics></Graphics>
+      },
 
 
-              {
-                path:"/buildcpuDetails/:id",
-                element:<BuildcpuDetails/>,
-                 loader: ({ params }) => {
-                  console.log(params);
-                  return fetch(`http://localhost:5000/buildcpu/${params.id}`);
-                },
-              },
-              {
-                path:"/buildramDetails/:id",
-                element:<BuildramDetails/>,
-                 loader: ({ params }) => {
-                  console.log(params);
-                  return fetch(`http://localhost:5000/buildram/${params.id}`);
-                },
-              },
-              {
-                path:"/buildcoolerDetails/:id",
-                element:<BuildcoolerDetails/>,
-                 loader: ({ params }) => {
-                  console.log(params);
-                  return fetch(`http://localhost:5000/buildcooler/${params.id}`);
-                },
-              },
-              {
-                path:"/buildkeyboardsDetails/:id",
-                element:<BuildKeyboardDetails/>,
-                 loader: ({ params }) => {
-                  console.log(params);
-                  return fetch(`http://localhost:5000/buildkeyboards/${params.id}`);
-                },
-              },
-              {
-                path:"/buildmonitorDetails/:id",
-                element:<BuildmonitorDetails/>,
-                 loader: ({ params }) => {
-                  console.log(params);
-                  return fetch(`http://localhost:5000/buildmonitor/${params.id}`);
-                },
-              },
-              {
-                path:"/BuildgraphicsDetails/:id",
-                element:<BuildgraphicsDetails/>,
-                 loader: ({ params }) => {
-                  console.log(params);
-                  return fetch(`http://localhost:5000/buildgraphics/${params.id}`);
-                },
-              }
-           
-        ]
-    }
+
+
+      {
+        path: "/components/:id",
+        element: <Details />,
+        loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
+      },
+
+
+     
+
+
+
+
+
+
+
+      {
+        path: '/carts',
+        element: <Cart></Cart>,
+      },
+
+      {
+        path:"/login",
+        element:<Login></Login>
+      },
+      {
+        path:"/register",
+        element:<Register></Register>
+      },
+      {
+        path:"/payment",
+        element:<Payment></Payment>
+      }
+
+
+    
+
+
+
+
+    ]
+  },
+  {
+    path:"dashboard",
+    element:<Dashboard></Dashboard>,
+
+    children: [
+      {
+          path:"carts",
+          element:<Cart></Cart>
+
+      },
+      {
+        path: "allproducts",
+        element: <AllProducts></AllProducts>
+      },
+      {
+        path: "banner",
+        element: <Banner></Banner>
+      },
+      {
+        path: "user",
+        element:<User></User>
+      },
+    ]
+
+  }
 ])
 
 export default route;

@@ -2,7 +2,8 @@ import React from 'react';
 import bannerr from '../../../assets/32741-5-gaming-computer-image.png'
 const Latest = () => {
     return (
-        <div>
+        <div id='latest'>
+            <p className='lg:text-3xl text-2xl font-bold my-10 uppercase'>Latest Products</p>
               <div className='grid lg:grid-cols-3 gap-2 justify-center items-center bg-gradient-to-r from-[#141e20]  to-[#243b55] p-8 text-white rounded-2xl'>
                         <div className='space-y-3'>
                             <p className='lg:text-3xl text-xl font-semibold'>DOUBLE PERFORMANCE <br /> <span className='text-red-600'>GAMMING</span> PC CORE 4</p>
